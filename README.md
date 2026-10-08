@@ -1,33 +1,16 @@
-# Min Heap Construction
+# Min heap
 
-Bottom-up min heap construction with recursive heapify.
+This example takes the numbers 10, 4, 8, 12, 6, and 2 and turns them into a min heap.
 
-An educational C++ example developed from coursework, organized as a standalone project.
+I used heapify to compare a node with its children and swap it with the smaller child when needed. It starts near the bottom of the array and works toward the root.
 
-## Build and run
+The program prints the array after building the heap. It only builds the heap for now; it does not have functions to add or remove values.
 
-Requires a C++17 compiler and Make. Smoke checks also require Python 3.
+To build and run it, you need a C++17 compiler and Make. Open a terminal in this folder and run:
 
 ```sh
 make
 make run
-make check
 ```
 
-To choose a compiler: `make CXX=clang++` or `make CXX=g++`. Run `make clean` to remove build outputs.
-
-## Example
-
-The demonstration transforms the fixed array 10, 4, 8, 12, 6, 2 into a min heap.
-
-## Structure
-
-- `src/`: source code and headers.
-- `tests/smoke.py`: representative console checks with execution timeouts.
-- `Makefile`: builds the source files together into `build/example`.
-
-## Scope
-
-This example demonstrates construction; it does not implement heap insertion or extraction.
-
-The source retains the original exercise logic and explanatory comments. Build outputs, submission documents, and course materials are not part of this repository.
+You can also run `make check` to check the sample output. That needs Python 3. Use `make clean` if you want to remove the compiled program.
